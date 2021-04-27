@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 5000
 const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectId
+const port = process.env.PORT || 5000;
 
 const cors = require('cors');
 require('dotenv').config();
@@ -111,7 +111,7 @@ app.delete('/dashboard/delete/:id', (req, res) => {
     })
    })
 
- console.log('database conneted ')
+ console.log('database connected ')
 });
 
 
@@ -125,4 +125,4 @@ app.get('/', (req, res) => {
 })
 
 // app.listen(`${port}`)
-app.listen(process.env.PORT || prot)
+app.listen(process.env.PORT || port)
