@@ -124,4 +124,5 @@ app.get('/', (req, res) => {
   res.send('Im working')
 })
 
-app.listen(`${port}`)
+// app.listen(`${port}`)
+app.listen(process.env.PORT || prot)
